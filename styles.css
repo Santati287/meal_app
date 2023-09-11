@@ -1,0 +1,177 @@
+/* styles.css */
+
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Search container styles */
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+label {
+    font-size: 18px;
+    color: #444;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    max-width: 400px; /* Limit the input width on larger screens */
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: #ff4500;
+}
+
+/* Filter container styles */
+.filter-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+label[for="category-dropdown"] {
+    font-size: 18px;
+    color: #444;
+}
+
+#category-dropdown {
+    padding: 10px;
+    font-size: 16px;
+    appearance: none; /* Remove default dropdown arrow */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px; /* Limit the input width on larger screens */
+}
+
+/* Meal card styles */
+.meal-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.meal-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.meal-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.add-to-favorites {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-favorites:hover {
+    background-color: #ff4500;
+}
+
+/* Favorites section styles */
+.favorites {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.favorite-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.favorite-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.favorite-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.remove-from-favorites {
+    background-color: #e74c3c; /* Red background color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.remove-from-favorites:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    /* Increase input width on larger screens */
+    #search-input {
+        max-width: 600px;
+    }
+
+    /* Display meal cards in a row on larger screens */
+    .meal-card {
+        display: inline-block;
+        width: calc(33.33% - 20px);
+        margin: 10px;
+    }
+
+    /* Display favorites in a row on larger screens */
+    .favorite-card {
+        display: inline-block;
+        width: calc(33.33% - 20px);
+        margin: 10px;
+    }
+}

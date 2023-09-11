@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Meal Search</h1>
+    <div class="search-container">
+        <label for="search-input">Search for a meal:</label>
+        <input type="text" id="search-input">
+        <button id="search-button">Search</button>
+    </div>
+
+    <!-- <div class="filter-container">
+        <label for="category-dropdown">Select a Category:</label>
+        <select id="category-dropdown">
+            <option value="">All Categories</option>
+        </select>
+    </div> -->
+  
+    <div class="meal-list" id="meal-list">
+        <!-- Meals will be displayed here -->
+    </div>
+    <div class="favorites" id="favorites">
+        <h2>Favorites</h2>
+        <div class="favorite-list" id="favorite-list">
+            <!-- Favorite meals will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
