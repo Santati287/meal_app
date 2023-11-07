@@ -129,7 +129,7 @@ function handleSearch() {
                 if (meals) {
                     renderMeals(meals);
                 } else {
-                    mealList.innerHTML = "<p>No meals found.</p>";
+                    mealList.innerHTML = "<h1>No meals found.</h1>";
                 }
             });
     } else {
