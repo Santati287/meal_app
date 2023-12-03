@@ -41,11 +41,79 @@ label {
     margin-top: 10px;
     transition: background-color 0.3s ease;
 }
-
 #search-button:hover {
     background-color: #ff4500;
 }
 
+.view-recipe{
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.view-recipe:hover {
+    background-color: #ff4500;
+}
+
+.recipe-details{
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%,-50%);
+    background-color: #fff;
+    border-radius: 12px;
+    width: 40%;
+    height: 60%;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+    overflow-y: scroll;
+}
+
+.recipe-details-content {
+    padding: 20px;
+}
+
+.recipePopUp{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ingredentList li{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.recipeInstructions p {
+    line-height: 30px;
+    white-space: pre-line;
+}
+.recipe-details::-webkit-scrollbar{
+    width: 10px;
+}
+
+.recipe-close-btn{
+    padding: 5px 5px;
+    background-color: #643210;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.recipe-details::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 10px;
+    --webkit-border-radius: 15px;
+}
 /* Filter container styles */
 .filter-container {
     text-align: center;
@@ -78,6 +146,10 @@ label[for="category-dropdown"] {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.meal-card span{
+    font-weight: 600;
+}
+
 .meal-card h3 {
     font-size: 20px;
     margin: 10px 0;
@@ -103,6 +175,15 @@ label[for="category-dropdown"] {
 
 .add-to-favorites:hover {
     background-color: #ff4500;
+}
+/* recipe Details */
+.recipe-details{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #b37d7d;
 }
 
 /* Favorites section styles */
